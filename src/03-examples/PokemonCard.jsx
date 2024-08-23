@@ -13,7 +13,7 @@ export const PokemonCard = ({ id, name, sprites = [] }) => {
     <>
       <blockquote className="blockquote">
         <p ref={divRef} className="mt-1">
-          {name}
+          #{id} - {name}
         </p>
 
         <div>
