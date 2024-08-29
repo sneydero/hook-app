@@ -4,7 +4,7 @@ const Message = () => {
   const [coords, setCoords] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
-    const onMouseMove = ({ x, y }) => {
+    const onMouseMove = ({ x, y }: any) => {
       setCoords({ x, y });
       console.log(coords);
     };

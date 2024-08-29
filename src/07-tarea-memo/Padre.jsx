@@ -2,7 +2,7 @@ import React, { useCallback } from 'react'
 import { Hijo } from './Hijo'
 import { useState } from 'react';
 
-export const Padre = () => {
+const Padre = () => {
 
     const numeros = [2,4,6,8,10];
     const [valor, setValor] = useState(0);
@@ -32,3 +32,5 @@ export const Padre = () => {
         </div>
     )
 }
+
+export default Padre
