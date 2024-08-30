@@ -6,28 +6,28 @@ export const Navbar = () => {
     <>
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark rounded-3">
   <div className="container-fluid">
-    <Link className="navbar-brand" to="/">useContext</Link>
+    <Link className="navbar-brand" to="hook-app/">useContext</Link>
    
     <div className="collapse navbar-collapse" id="navbarNav">
       <ul className="navbar-nav">
 
       <NavLink className={({isActive}) => `nav-link ${isActive ? 'active':''}`}
-       to="/">
+       to="hook-app/">
         Home
       </NavLink>
 
       <NavLink className={({isActive}) => `nav-link ${isActive ? 'active':''}`}
-        to="/about">
+        to="/hook-app/about">
         About
       </NavLink>    
 
       <NavLink className={({isActive}) => `nav-link ${isActive ? 'active':''}`}
-       to="/login">
+       to="/hook-app/login">
         Login
       </NavLink>
 
       <NavLink className={({isActive}) => `nav-link ${isActive ? 'active':''}`}
-        to="/todo">
+        to="/hook-app/todo">
         Todos
       </NavLink>    
         
