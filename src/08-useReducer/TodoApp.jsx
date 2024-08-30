@@ -2,15 +2,17 @@
 import { TodoList } from "./components/TodoList";
 import { TodoAdd } from "./components/TodoAdd";
 import { useTodos } from "../hooks/useTodos";
+import { useContext } from "react";
+import { UserContext } from "../09-useContext/context/UserContext";
 
 const TodoApp = () => {
 
   const {todos, todosCount, leftTodosCount, handleNewTodo, handleRemoveTodo, handleToggleTodo} = useTodos();
-
+  const {user} =  useContext(UserContext)
   return (
     <>
       <h1>
-        TodoApp: {todosCount}, <small>Left: {leftTodosCount}</small>
+        Tasks: {todosCount}, <small>Left: {leftTodosCount}</small> by: {user?.name}
       </h1>
       <hr />
 
