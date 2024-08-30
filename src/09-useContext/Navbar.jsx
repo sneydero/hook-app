@@ -21,7 +21,7 @@ export const Navbar = () => {
             <span className="navbar-toggler-icon"></span>
           </button>
           <Link className="navbar-brand" to="hook-app/">
-            useContext
+            Home
           </Link>
 
           <div
