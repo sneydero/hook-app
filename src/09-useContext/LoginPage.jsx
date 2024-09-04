@@ -15,13 +15,14 @@ export const LoginPage = () => {
       <>
       <h1>LoginPage</h1>
       <hr/>
-<form onSubmit={handleSubmit}>    
+<form aria-label="form" onSubmit={handleSubmit}>    
     <input
             type="text"
             className="form-control"
             placeholder="Username"
             name="name"
             value={name}
+            aria-label="name"
             onChange={onInputChange}
           />
 
@@ -30,6 +31,7 @@ export const LoginPage = () => {
             className="form-control mt-2"
             placeholder="user@domain.com"
             name="email"
+            aria-label="email"
             value={email}
             onChange={onInputChange}
           />
@@ -39,7 +41,7 @@ export const LoginPage = () => {
           >Login</button>
 </form>
 
-      <code>
+      <code aria-label='code'>
         {JSON.stringify(user)}
       </code>
 
