@@ -13,13 +13,13 @@ export const MainApp = () => {
       <hr/>
           
       <Routes>
-        <Route path="hook-app/" element={<HomePage/>}/>
-        <Route path="/hook-app/about" element={<AboutPage/>}/>
-        <Route path="/hook-app/login" element={<LoginPage/>}/>
-        <Route path="/hook-app/todo" element={<TodoApp />}/>
+        <Route path="/" element={<HomePage/>}/>
+        <Route path="/about" element={<AboutPage/>}/>
+        <Route path="/login" element={<LoginPage/>}/>
+        <Route path="/todo" element={<TodoApp />}/>
         {/* This is in case a path does not exist */}
         {/* <Route path="/*" element={<LoginPage/>}/> */}
-        <Route path="/*" element={<Navigate to="/hook-app//about"/>}/>
+        <Route path="/*" element={<Navigate to="/about"/>}/>
       </Routes>
     </UserProvider>
   )

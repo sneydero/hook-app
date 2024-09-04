@@ -20,7 +20,7 @@ export const Navbar = () => {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-          <Link className="navbar-brand" to="hook-app/">
+          <Link className="navbar-brand" to="/">
             Home
           </Link>
 
@@ -33,7 +33,7 @@ export const Navbar = () => {
                 className={({ isActive }) =>
                   `nav-link ${isActive ? "active" : ""}`
                 }
-                to="hook-app/"
+                to="/"
               >
                 Home
               </NavLink>
@@ -42,7 +42,7 @@ export const Navbar = () => {
                 className={({ isActive }) =>
                   `nav-link ${isActive ? "active" : ""}`
                 }
-                to="/hook-app/about"
+                to="/about"
               >
                 About
               </NavLink>
@@ -51,7 +51,7 @@ export const Navbar = () => {
                 className={({ isActive }) =>
                   `nav-link ${isActive ? "active" : ""}`
                 }
-                to="/hook-app/login"
+                to="/login"
               >
                 Login
               </NavLink>
@@ -60,7 +60,7 @@ export const Navbar = () => {
                 className={({ isActive }) =>
                   `nav-link ${isActive ? "active" : ""}`
                 }
-                to="/hook-app/todo"
+                to="/todo"
               >
                 Todos
               </NavLink>
